@@ -1,6 +1,7 @@
 # import LIDAR
 # import CAN
-from lib import LIDAR, CAN
+from lib.CAN import CAN
+from lib.LIDAR import LIDAR
 
 # Initialisation des fonctions des variables
 # LIDAR.setup_lidar()
