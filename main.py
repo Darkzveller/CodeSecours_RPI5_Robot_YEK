@@ -13,7 +13,6 @@ poids_fort,poids_faible = CAN.separation_en_octets(valeur)
 print(f"Poids fort : {poids_fort} (0x{poids_fort:02X})")
 print(f"Poids faible : {poids_faible} (0x{poids_faible:02X})")
 i = 0 
-f=0
 
 # while (True) : 
     # i=i+1
