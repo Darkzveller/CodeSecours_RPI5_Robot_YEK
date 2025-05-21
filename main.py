@@ -1,5 +1,7 @@
-import LIDAR
-import CAN
+# import LIDAR
+# import CAN
+from lib import LIDAR, CAN
+
 # Initialisation des fonctions des variables
 # LIDAR.setup_lidar()
 # CAN.setup_can()
@@ -13,6 +15,6 @@ print(f"Poids faible : {poids_faible} (0x{poids_faible:02X})")
 i = 0 
 f=0
 
-while (True) : 
-    i=i+1
-    print("i",i)
+# while (True) : 
+    # i=i+1
+    # print("i",i)
