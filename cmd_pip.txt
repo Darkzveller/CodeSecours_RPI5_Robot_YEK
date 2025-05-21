@@ -1,0 +1,8 @@
+Lidar : 
+    - pip install rplidar
+    - pip install rplidar
+    - py -m pip install rplidar
+CAN : 
+    - pip install python-can
+    - python3 -m pip install python-can
+    - py -m pip install python-can

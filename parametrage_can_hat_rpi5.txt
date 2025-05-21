@@ -1,0 +1,15 @@
+by matthieu sans son consentement bien évidemment
+
+TRUCS A FAIRE SUR LA RPI POUR GERER LE CAN
+
+aller dans le fichier config : sudo nano /boot/config.txt ou sudo nano /boot/firmware/config.txt si pas trouvé dans juste boot
+dans config.txt aller desencdre jusqu'à [all] 
+une fois dans [all] écrire les choses suivantes :
+- dtparam=spi=on
+- dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
+Normalement il n'y a rien d'autre à mettre pour la rpi 5. Cela dit pour la rpi 4 ajouter : dtoverlay=spi-bcm2712
+
+Pour activer can0:
+sudo ip link set can0 up type can bitrate 1000000
+Ensuite pour vérifier :
+ip link show -> regarder si le can0 est up
