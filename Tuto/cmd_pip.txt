@@ -2,7 +2,14 @@ Lidar :
     - pip install rplidar
     - pip install rplidar
     - py -m pip install rplidar
+
+Pour la rpi5 : 
+sudo pip3 install rplidar --break-system-packages
+
+
 CAN : 
     - pip install python-can
     - python3 -m pip install python-can
     - py -m pip install python-can
+Pour la rpi5 : 
+sudo pip3 install python-can --break-system-packages

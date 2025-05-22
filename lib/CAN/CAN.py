@@ -1,4 +1,4 @@
-import lib.CAN.ID_CAN as ID_CAN
+import ID_CAN as id
 import can
 bus =None
 def setup_can():
