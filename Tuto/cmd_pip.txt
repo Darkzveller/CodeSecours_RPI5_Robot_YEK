@@ -13,3 +13,10 @@ CAN :
     - py -m pip install python-can
 Pour la rpi5 : 
 sudo pip3 install python-can --break-system-packages
+
+
+Keyboar : 
+    -pip install keyboard
+
+Pour la rpi5 : 
+ sudo pip3 install keyboard --break-system-packages

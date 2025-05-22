@@ -4,6 +4,7 @@ from lib.CAN import CAN
 from lib.LIDAR import LIDAR
 
 # Initialisation des fonctions des 
+# LIDAR.stop_lidar()
 LIDAR.setup_lidar()
 # CAN.setup_can()
 test = False
