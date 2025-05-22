@@ -17,12 +17,13 @@ print(f"Poids faible : {poids_faible} (0x{poids_faible:02X})")
 i = 0 
 
 
-while True:
-    i += 1
-    LIDAR.read_lidar()
-    print("i = ", i)
-    if keyboard.is_pressed('Q'):
-        LIDAR.stop_lidar()
-        print("Touche 'S' détectée. Arrêt du programme.")
-        break
-    time.sleep(0.025)
+try:
+    while True:
+        i += 1
+        LIDAR.read_lidar()
+        print("i = ", i)
+        time.sleep(0.0025)
+
+except KeyboardInterrupt:
+    print("Arret demand� par l'utilisateur.")
+    LIDAR.stop_lidar()

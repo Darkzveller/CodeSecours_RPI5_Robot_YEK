@@ -6,15 +6,6 @@ scan_iterator = None
 
 
 # Fonction de lecture des données du LiDAR
-# def read_lidar():
-#     global lidar  # on précise qu'on utilise la variable globale
-
-#     for scan in lidar.iter_scans():
-#         for (_, angle, distance) in scan:
-#             print(f'Angle: {angle:.2f}°, Distance: {distance:.2f} mm')
-#             if 0 < distance < 300:
-#                 print(f'Stop! Object detected at {distance:.2f} mm, angle {angle:.2f}°')
-#                 print('\n')
 def read_lidar():
     global lidar
     global scan_iterator
@@ -37,12 +28,12 @@ def stop_lidar():
 # Fonction d'initialisation du LiDAR
 def setup_lidar():
     global lidar,scan_iterator  # on précise qu'on utilise la variable globale
-    lidar = RPLidar("COM18", baudrate=256000)
+    lidar = RPLidar('/dev/ttyUSB0', baudrate=256000)
     print(lidar.get_info())
     print('lidar',lidar)
     lidar.start_motor()
     scan_iterator = lidar.iter_scans()  # une seule fois ici
-    time.sleep(5)
+    time.sleep(2)
     print('Initialisation du lidar')
     print('\n')
 
