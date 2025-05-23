@@ -22,8 +22,8 @@ try:
         i += 1
         LIDAR.read_lidar()
         print("i = ", i)
-        time.sleep(0.0025)
+        #time.sleep(0.0025)
 
 except KeyboardInterrupt:
-    print("Arret demand� par l'utilisateur.")
+    print("Arret demandé par l'utilisateur.")
     LIDAR.stop_lidar()

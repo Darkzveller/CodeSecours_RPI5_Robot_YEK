@@ -33,7 +33,7 @@ def setup_lidar():
     print('lidar',lidar)
     lidar.start_motor()
     scan_iterator = lidar.iter_scans()  # une seule fois ici
-    time.sleep(2)
+    time.sleep(5)
     print('Initialisation du lidar')
     print('\n')
 
